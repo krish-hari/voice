@@ -4,8 +4,8 @@ var speech = true;
   
         const recognition = new SpeechRecognition();
         recognition.interimResults = true;
-        const words = document.querySelector('.words');
-        words.appendChild(p);
+        //const words = document.querySelector('.words');
+        //words.appendChild(p);
   
         recognition.addEventListener('result', e => {
             const transcript = Array.from(e.results)
@@ -13,7 +13,7 @@ var speech = true;
                 .map(result => result.transcript)
                 .join('')
   
-            document.getElementById("p").innerHTML = transcript;
+          //  document.getElementById("p").innerHTML = transcript;
             console.log(transcript);
         });
           
