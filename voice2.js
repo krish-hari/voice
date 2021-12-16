@@ -38,10 +38,10 @@ recognition.onresult = function (event) {
 
   console.log(transcript);
 
-  if (transcript.toLowerCase() == 'no trade in') {
+  if (transcript.toLowerCase() == "no trade in") {
     $("#tradeinOptionNo").trigger("click");
   }
-  else if (transcript.toLowerCase() == 'continue') {
+  else if (transcript.toLowerCase() == "continue") {
     $(".buttonLabel").trigger("click");
   }
 
